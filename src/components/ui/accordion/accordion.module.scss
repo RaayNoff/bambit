@@ -1,0 +1,69 @@
+.acc {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: #fff;
+	padding-top: 2.5676%;
+	@media (min-width: 991.98px) {
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	// .acc__heading
+	&__heading {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__container {
+		width: 89.8648648649%;
+	}
+
+	// .acc__title
+	&__title {
+		width: 81.8919%;
+		font-family: "Ubuntu", sans-serif;
+		font-size: 1.4117647059rem;
+		line-height: 1.8235294118rem;
+		margin-bottom: 2.2556%;
+
+		@media (max-width: 446.98px) {
+			font-size: 1rem;
+		}
+	}
+
+	// .acc__arrow
+	&__arrow {
+		transition: transform 550ms ease-in-out;
+	}
+
+	// .acc__content
+	&__content {
+		width: 81.8919%;
+		font-size: 1rem;
+		line-height: 1.2941rem;
+		padding: 0;
+		max-height: 0px;
+		opacity: 0;
+		transition: all 550ms ease-in-out;
+
+		@media (max-width: 446.98px) {
+			font-size: 0.8rem;
+		}
+	}
+}
+
+.border {
+	border-bottom: 1px solid #4366ae;
+}
+
+.opened {
+	opacity: 1;
+	padding-bottom: 2.0677%;
+	max-height: 500px;
+}
+
+.rotate {
+	transform: rotate(180deg);
+}

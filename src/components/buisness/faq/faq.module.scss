@@ -1,0 +1,28 @@
+.faq {
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	border-radius: 15px;
+	width: 66.0714285714%;
+	padding-top: 6.7568%;
+	padding-bottom: 6.956%;
+	margin-top: 7.1429%;
+	margin-bottom: 2%;
+	height: fit-content;
+	// .faq__title
+	&__title {
+		padding: 0 2.2%;
+		margin-bottom: 2.4324324324%;
+		@media (max-width: 320.98px) {
+			padding: 0;
+		}
+	}
+
+	@media (max-width: 680.98px) {
+		margin-top: 18.1429%;
+		width: 80.0714285714%;
+	}
+	@media (max-width: 479.98px) {
+		width: 100%;
+	}
+}

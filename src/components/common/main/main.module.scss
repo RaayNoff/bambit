@@ -1,0 +1,15 @@
+.main {
+	width: 100%;
+	background-image: url("../../../assets/images/background.jpg");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	display: flex;
+	justify-content: center;
+	// .main__container
+	&__container {
+		display: flex;
+		justify-content: center;
+	}
+}

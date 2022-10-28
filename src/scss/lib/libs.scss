@@ -1,0 +1,19 @@
+.main-title {
+	font-size: 1.8823529412rem;
+	line-height: 2.1764705882rem;
+	font-weight: 500;
+	font-family: Ubuntu, sans-serif;
+	text-align: center;
+	@media (max-width: 479.98px) {
+		font-size: 28px;
+		line-height: 32px;
+	}
+	@media (max-width: 446.98px) {
+		font-size: 22px;
+		line-height: 26px;
+	}
+	@media (max-width: 320.98px) {
+		font-size: 22px;
+		line-height: 16px;
+	}
+}

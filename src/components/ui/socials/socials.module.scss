@@ -1,0 +1,109 @@
+@mixin svgHoverAnimation($fillRect, $fillPath) {
+	&:hover {
+		svg {
+			rect {
+				stroke: transparent;
+				fill: #{$fillRect};
+			}
+			path {
+				fill: #{$fillPath};
+			}
+		}
+	}
+}
+@mixin svgMD3($fillRect, $fillPath) {
+	@media (max-width: 767.98px) {
+		svg {
+			rect {
+				stroke: transparent;
+				fill: #{$fillRect};
+			}
+			path {
+				fill: #{$fillPath};
+			}
+		}
+	}
+}
+
+.socials {
+	width: 18.3035714286%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@media (max-width: 1098.98px) {
+		width: 205px;
+	}
+
+	// .socials__item
+	&__item {
+		max-height: 40px;
+		transition: all 150ms ease-in-out;
+
+		&:nth-child(1n) {
+			cursor: pointer;
+			svg {
+				path {
+					fill: #000;
+					transition: fill 150ms ease-in-out;
+				}
+				rect {
+					stroke: #000;
+					fill: #fff;
+					transition: all 0.15s ease-in-out;
+				}
+			}
+		}
+
+		@media (min-width: 991.98px) {
+			&:nth-child(1) {
+				@include svgHoverAnimation(#48c95f, #fff);
+			}
+			&:nth-child(2) {
+				@include svgHoverAnimation(#27a6e5, #fff);
+			}
+			&:nth-child(3) {
+				@include svgHoverAnimation(transparent, #fff);
+
+				&:hover {
+					background: radial-gradient(
+						230.93% 230.93% at 102.01% 2.03%,
+						#f9ed32 0%,
+						#ee2a7b 36%,
+						#d22a8a 44%,
+						#8b2ab2 60%,
+						#1b2af0 83%,
+						#002aff 88%
+					);
+				}
+			}
+			&:nth-child(4) {
+				@include svgHoverAnimation(#0077ff, #fff);
+			}
+		}
+
+		&:nth-child(1) {
+			@include svgMD3(#48c95f, #fff);
+		}
+		&:nth-child(2) {
+			@include svgMD3(#27a6e5, #fff);
+		}
+		&:nth-child(3) {
+			@include svgMD3(transparent, #fff);
+			@media (max-width: 767.98px) {
+				background: radial-gradient(
+					230.93% 230.93% at 102.01% 2.03%,
+					#f9ed32 0%,
+					#ee2a7b 36%,
+					#d22a8a 44%,
+					#8b2ab2 60%,
+					#1b2af0 83%,
+					#002aff 88%
+				);
+			}
+		}
+		&:nth-child(4) {
+			@include svgMD3(#0077ff, #fff);
+		}
+	}
+}
