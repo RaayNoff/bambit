@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/bambit/static/css/main.3b8ff099.css",
+    "main.js": "/bambit/static/js/main.e6369635.js",
+    "static/media/background.jpg": "/bambit/static/media/background.588e256408a9480cf9c3.jpg",
+    "static/media/KarmaticArcade.woff": "/bambit/static/media/KarmaticArcade.16967f5411282a7ebfee.woff",
+    "static/media/KarmaticArcade.woff2": "/bambit/static/media/KarmaticArcade.7a4dfd708262144c89cf.woff2",
+    "index.html": "/bambit/index.html",
+    "main.3b8ff099.css.map": "/bambit/static/css/main.3b8ff099.css.map",
+    "main.e6369635.js.map": "/bambit/static/js/main.e6369635.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b8ff099.css",
+    "static/js/main.e6369635.js"
+  ]
+}
