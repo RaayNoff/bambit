@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React, { FC } from "react";
 import s from "./header.module.scss";
 import logo from "../../../assets/images/logo.png";
 import Socials from "../../ui/socials/Socials.component";
@@ -7,9 +7,19 @@ import Navigation from "../../ui/navigation/Navigation.component";
 interface IHeaderProps {
   isSidebarOpened: boolean;
   setSidebarOpened: React.Dispatch<React.SetStateAction<boolean>>;
+  pageLock: () => void;
 }
 
-const Header: FC<IHeaderProps> = ({ isSidebarOpened, setSidebarOpened }) => {
+const Header: FC<IHeaderProps> = ({
+  isSidebarOpened,
+  setSidebarOpened,
+  pageLock,
+}) => {
+  const burgerClickHandler = () => {
+    pageLock();
+    setSidebarOpened((prev) => !prev);
+  };
+
   return (
     <header className={s.header}>
       <div className={`${s.header__container} container`}>
@@ -22,7 +32,7 @@ const Header: FC<IHeaderProps> = ({ isSidebarOpened, setSidebarOpened }) => {
 
         <button
           type="button"
-          onClick={() => setSidebarOpened((prev) => !prev)}
+          onClick={() => burgerClickHandler()}
           className={
             isSidebarOpened ? `${s.burger} ${s.opened} ` : `${s.burger}`
           }

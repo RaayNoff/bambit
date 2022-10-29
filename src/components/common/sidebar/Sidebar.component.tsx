@@ -6,13 +6,19 @@ import s from "./sidebar.module.scss";
 interface ISidebarProps {
   isEnabled: boolean;
   setSidebarOpened: React.Dispatch<React.SetStateAction<boolean>>;
+  pageLock: () => void;
 }
 
-const Sidebar: FC<ISidebarProps> = ({ isEnabled, setSidebarOpened }) => {
+const Sidebar: FC<ISidebarProps> = ({
+  isEnabled,
+  setSidebarOpened,
+  pageLock,
+}) => {
   return (
     <div
       className={isEnabled ? `${s.wrapper}` : `${s.wrapper} ${s.hidden}`}
       onClick={() => {
+        pageLock();
         setSidebarOpened((prev) => !prev);
       }}
     >
