@@ -5,7 +5,7 @@ import Main from "../../common/main/Main.component";
 import Sidebar from "../../common/sidebar/Sidebar.component";
 
 const MainPage: FC = () => {
-  const [isSidebarOpened, setIsSidebarOpened] = useState(true);
+  const [isSidebarOpened, setIsSidebarOpened] = useState(false);
 
   return (
     <>
