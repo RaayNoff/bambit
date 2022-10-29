@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/bambit/static/css/main.65b7b360.css",
-    "main.js": "/bambit/static/js/main.7a885f87.js",
+    "main.css": "/bambit/static/css/main.17850c71.css",
+    "main.js": "/bambit/static/js/main.62b4a87e.js",
     "static/media/background.jpg": "/bambit/static/media/background.588e256408a9480cf9c3.jpg",
     "static/media/KarmaticArcade.woff": "/bambit/static/media/KarmaticArcade.16967f5411282a7ebfee.woff",
     "static/media/KarmaticArcade.woff2": "/bambit/static/media/KarmaticArcade.7a4dfd708262144c89cf.woff2",
     "index.html": "/bambit/index.html",
-    "main.65b7b360.css.map": "/bambit/static/css/main.65b7b360.css.map",
-    "main.7a885f87.js.map": "/bambit/static/js/main.7a885f87.js.map"
+    "main.17850c71.css.map": "/bambit/static/css/main.17850c71.css.map",
+    "main.62b4a87e.js.map": "/bambit/static/js/main.62b4a87e.js.map"
   },
   "entrypoints": [
-    "static/css/main.65b7b360.css",
-    "static/js/main.7a885f87.js"
+    "static/css/main.17850c71.css",
+    "static/js/main.62b4a87e.js"
   ]
 }
