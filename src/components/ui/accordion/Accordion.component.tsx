@@ -20,6 +20,8 @@ const Accordion: FC<IAccordionProps> = ({
   const clickHandler = () => {
     if (active === title) {
       setActive("");
+    } else if (active === "") {
+      setActive(title);
     } else {
       setActive("");
       setTimeout(() => {
